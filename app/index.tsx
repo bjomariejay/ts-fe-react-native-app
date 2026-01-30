@@ -52,8 +52,12 @@ export default function Home() {
         <View style={styles.container}>
             {isDesktop ? (
                 <>
-                    <View style={styles.headerDesktop}>
-                        <Text style={styles.headerText}>My iFrame App</Text>
+                    <View className="flex-1 bg-gray-100">
+                        <View className="h-14 bg-blue-600 items-center justify-center">
+                            <Text className="text-white text-lg font-bold">
+                                My WebView App
+                            </Text>
+                        </View>
                     </View>
                     <View style={styles.webview}>
                         <iframe
